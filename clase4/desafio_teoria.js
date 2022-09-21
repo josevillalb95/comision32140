@@ -7,16 +7,14 @@ class Desafio{
 
     async save(obj){
         try {
-            const archivo =await this.getAll()
+            const archivo =[]
             try{
                 const lectura=await this.getAll() 
-                console.log({lectura})
-                if(lectura)
+                if(lectura){
                     archivo.concat(lectura)
+                }
             }
-            catch{
-
-            }
+            catch{  }
             archivo.push(obj)
             await fs.promises.writeFile(this.name, JSON.stringify(archivo, null, 3) )
             console.log("escrito correctamente")
@@ -25,29 +23,29 @@ class Desafio{
         }
 
     }
-    // async getById(){
+    async getById(){
 
-    // }
+    }
 
     async getAll(){
         try {
            const archivo=  await fs.promises.readFile(this.name, 'utf-8')
            return JSON.parse(archivo)
         } catch (error) {
-            throw new Error(`fallo lectura `,error)
+            console.log(`fallo lectura `,error)
         }
     }
-    // async deleteById(){
+    async deleteById(){
 
-    // }
+    }
 
-    // async deleteAll(){
+    async deleteAll(){
 
-    // }
+    }
 }
 
 const documento=new Desafio('desafio')
-console.log(  documento.getAll() )
+documento.getAll().then( console.log )
 documento.save({
     title: 'Calculadora',
     price: 234.56,
