@@ -1,0 +1,26 @@
+XML
+<alumnos>
+    <alumno>
+        <nombre>juan</nombre>
+        <apellido>perrino</apellido>
+    </alumno>
+    <alumno>
+        <nombre>lautaro</nombre>
+        <apellido>tallarico</apellido>
+    </alumno>
+</alumnos>
+
+
+JSON
+{
+    "alumnos":[
+        {
+            nombre:"juan",
+            apellido:"perrino"
+        },
+        {
+            nombre:"lautaro",
+            apellido:"tallarico"
+        }
+    ]
+}
