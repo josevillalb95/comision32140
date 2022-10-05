@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furmulario de ingreso</title>
+</head>
+
+<body>
+    <h2>Ingresar persona</h2>
+    <form action="/personas" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="text" name="apellido" placeholder="Apellido" required>
+        <input type="number" name="edad" placeholder="Edad" required>
+        <input type="submit" value="Agregar">
+    </form>
+    <h2>Ingresar mascota</h2>
+    <form action="/mascotas" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="text" name="raza" placeholder="Raza" required>
+        <input type="number" name="edad" placeholder="Edad" required>
+        <input type="submit" value="Agregar">
+    </form>
+</body>
+
+</html>
