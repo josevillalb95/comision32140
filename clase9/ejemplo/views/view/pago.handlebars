@@ -1,0 +1,36 @@
+ <div class="payment ">
+      <h1>Info Pago</h1>
+      <h2>Metodo de pago</h2>
+      <p>{{tarjeta}} <button class="btn">update</button></p>
+      <h2>Direccion</h2>
+      <p> {{direccion}}<button class="btn">change</button></p>
+      <h2>Codigo postal</h2>
+      <p>{{codigo}}</p>
+      <h2>Codigo seguridad</h2>
+      <p>{{cvv}}<button class="btn">view</button></p>
+      <h2>Facturas</h2>
+      <div class='facturas'>
+            {{#each facturas.recibos}}
+                  {{!--       
+                        RECORRER UN ARRAY -> ME RETORNA
+                        @index Para el indice del array
+                        @last boolean que dice si es el ultimo 
+                   --}}
+                  {{> factura this}}
+            {{/each}}
+      </div>
+      <h2>{{debo facturas.recibos}}</h2>
+      
+      {{!-- 
+      RECORRER UN OBJ -> 
+            ME RETORNA 
+            @key PARA KEY Y 
+            this PARA EL VALUE
+      {{#each facturas.proximas}}
+            <p>
+                  {{@key}}
+                  <i>{{this}}</i>
+            </p>
+      {{/each}} --}}
+
+</div>

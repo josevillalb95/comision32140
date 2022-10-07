@@ -1,0 +1,32 @@
+DATOS
+{
+  firstname: "JUAN",
+  lastname: "PEREZ",
+    nota:1.8
+}
+
+PLANTILLA
+<p> Hola {{firstname}} {{lastname}}, como andas ? </p>
+<p>Queria informate que la nota del examen de la semana pasado fue un {{nota}}.</p>
+
+
+HELPERS
+Handlebars.registerHelper('felicitacion', function(nota) {
+   if(nota>4)
+    return "Te felicito"
+   else
+     return "Lo lamento"
+});
+
+PLANTILLA CON HELPERS 
+<p> Hola {{firstname}} {{lastname}}, como andas ? </p>
+<p>Queria informate que la nota del examen de la semana pasado fue un {{nota}}.</p>
+<b>{{felicitacion nota}}</b>
+
+
+HELPERS YA CREADOS 
+<p> Hola {{firstname}} {{lastname}}, como andas ? </p>
+<p>Queria informate que la nota del examen de la semana pasado fue un {{nota}}.</p>
+{{#if nota}}
+<b>{{felicitacion nota}}</b>
+{{/if}}
