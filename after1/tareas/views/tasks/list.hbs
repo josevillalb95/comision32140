@@ -1,0 +1,12 @@
+<div class="row">
+  {{#if tasks.length}}
+    {{#each tasks}}
+      <div class="col-md-3">
+          {{> TaskCard }}
+      </div>
+    {{/each}}
+  {{else}}
+    <p class="text-black display-3 text-center my-5">No tenemos tareas</p>
+  {{/if}}
+
+</div>
