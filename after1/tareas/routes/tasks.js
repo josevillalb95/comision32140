@@ -15,7 +15,7 @@ router.get("/edit/:id",async (req,res)=>{
   const task =  await tareasFunction.getById(id)
   const formInfo={
     botonName:"Actualizar",
-    metodo:"PUT",
+    metodo:"POST",
     url:"/tasks/edit/"+id
   }
   return res.render("tasks/formTareas", { task , ...formInfo});
@@ -52,10 +52,11 @@ router.post("/create", async (req,res)=>{
     res.redirect("/error");
   }
 });
-router.put("/edit/:id",async (req,res)=>{
+router.post("/edit/:id",async (req,res)=>{
   try {
     const { id } = req.params;
     const { title, description } = req.body;
+    console.log("holaaa",id,req.body)
     await tareasFunction.modify(id,{title,description})
     res.redirect("/tasks/list");
   } catch (errors) {
