@@ -1,0 +1,25 @@
+
+
+// en mis rutas 
+app.set('views','./views');
+app.set('view engine', 'ejs');
+app.get("/", (req, res) => {
+    const title='esta es la home'
+    res.render("incio.ejs",{'title':title});
+});
+
+//   ------ en partials => header.ejs
+<header>
+    <title><%= titleVal></title>
+</header>
+
+//   ------ en inicio.ejs
+<%- include('./partials/header.ejs',{'titleVal':title}) %>
+<p>HOLA MUNDO </p>
+
+// ejemplo 2
+//   ------ en partials => header.ejs con valor default
+<header>
+    <title><%= typeof titleVal='undefined'?  'sin titulo' :titleVal %></title>
+</header>
+

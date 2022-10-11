@@ -1,0 +1,72 @@
+
+{{!-- index.handlebars
+tendria 
+<!DOCTYPE html>
+<html lang="en">
+    {{> header}}
+    <body class="p-4">
+        {{{body}}}
+    </body>
+</html> --}}
+
+
+{{!-- 
+partials 
+    header
+    from 
+    itemLista tendria 
+        <tr>
+            <td>
+                {{nombre}}
+            </td>
+            <td>
+                {{apellido}}
+            </td>
+            <td>
+                {{edad}}
+            </td>
+        </tr>
+--}}
+
+    <div class="container bg-light p-4">
+        <section>
+            <h2 class="text-primary">Ingrese datos</h2>
+            {{> form  metodo='POST' action='/personas' }}
+        </section>
+        <section class="mt-5">
+            <h2 class="text-danger">Historial</h2>
+            {{#unless personas}}
+                <h4 class="text-bg-danger p-3">no se encontraron datos</h4>
+            {{else}}
+                <table class="table table-dark">
+                    <thead>
+                        <tr class="text-warning">
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each personas}}
+                            <tr>
+                                <td>
+                                    {{nombre}}
+                                </td>
+                                <td>
+                                   {{apellido}}
+                                </td>
+                                <td>
+                                   {{edad}}
+                                </td>
+                            </tr>
+                        {{/each}}
+
+                        {{!-- version mejorada  --}}
+                        {{#each personas}}
+                            {{> itemLista nombre apellido edad}}
+                        {{/each}}
+                    </tbody>
+                </table>
+           {{/unless}}
+        </section>
+    </div>

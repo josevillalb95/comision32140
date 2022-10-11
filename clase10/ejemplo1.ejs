@@ -1,0 +1,42 @@
+
+
+// en mis rutas 
+app.set('views','./views');
+app.set('view engine', 'ejs');
+app.get("/", (req, res) => {
+    const planilla=[
+        {edad:22,nombre:'juan'},
+        {edad:23,nombre:'pedro'},
+        {edad:11,nombre:'lucas'},
+    ]
+    res.render("tabla.ejs",{'planilla':planilla});
+  });
+//   ------ en tablas.ejs
+  
+
+<ul>
+<% array.forEach(element => {  %>
+<% if(element.edad > 18 ) %>
+   <li> <%= element.nombre %>  Edad:  <%= element.edad %></li>
+<% else %>
+   <li> es menor de edad </li>
+<%  }); %>
+</ul>
+
+// traduccion 
+// en Handlebars
+// <ul>
+//     {{#each planilla}}
+//         <li> {{nombre}} Edad: <b> {{edad}} </b></li>
+//     {{/each}}
+// </ul>
+
+// traducido en pug 
+// ul
+//   each val in planilla
+//     li= val.nombre + val.edad
+  
+
+
+
+

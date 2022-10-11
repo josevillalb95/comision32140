@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/header.ejs') %>
+<body class="p-4">
+    <div class="container bg-light p-4">
+        <section>
+            <h2 class="text-primary">Ingrese datos</h2>
+            <%- include('./partials/form.ejs',{ metodo:'POST', action:'/personas'} )%>
+        </section>
+        <section class="mt-5">
+            <h2 class="text-danger">Historial</h2>
+            <% if(!personas.length) { %>
+                <h4 class="text-bg-danger p-3">no se encontraron datos</h4>
+                <% } else { %>
+                    <table class="table table-dark">
+                        <thead>
+                            <tr class="text-warning">
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Edad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% personas.forEach(persona=> { %>
+                                <tr>
+                                    <td>
+                                        <%=persona.nombre%>
+                                    </td>
+                                    <td>
+                                        <%=persona.apellido%>
+                                    </td>
+                                    <td>
+                                        <%=persona.edad%>
+                                    </td>
+                                </tr>
+                                <% }); %>
+                        </tbody>
+                    </table>
+                    <% } %>
+        </section>
+    </div>
+</body>
+
+</html>

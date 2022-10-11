@@ -1,0 +1,24 @@
+//- un HTML basico seria algo como esto 
+html
+    head
+        title = 'hola soy un bello pug'
+    body
+        h1 = 'hola mundo desde pug '
+        p = parrafo
+        div
+            p = 'contenido dentro del div'
+            div     
+                span = 'hola soy un span'
+
+
+//- Pug JS utiliza su propia sintaxis para declarar atributos html sin 
+//- necesidad de abrir y cerrar etiquetas. 
+//- En cambio se usa la tabulación para indicar que una etiqueta pertenece
+
+//-  p = parrafo seria un valor que le pasamos por parametro a nuestro vista 
+
+//- para dibujar este ejemplo que llamaremos ejemplo.pug
+//- seria de la siguiente manera 
+app.get('/',(req,res)=>{
+    res.view('ejemplo.pub',{parrafo:'lorem ipmsun bla bla '})
+})

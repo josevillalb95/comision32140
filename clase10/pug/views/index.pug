@@ -1,0 +1,23 @@
+html
+    head
+        title='Medidor'
+        include ../views/medidor.pug
+        //- en handlebars lo haria asi ...
+        //- {{> medidor}}
+
+
+    body
+        include ../views/forCiclo.pug
+    
+    if condicion
+        footer
+            p='hola soy el footer'
+
+    //- en handlebars seria...
+    //- {{#if condicion}}
+    //- <footer>
+    //-     <p>hola soy el footer</p>
+    //- </footer>
+    //- {{/if}}
+        
+

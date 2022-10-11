@@ -1,0 +1,23 @@
+
+//- con ! le indico a pug que voy a usar html
+h1(style={color: 'blue'})!=titulo
+
+//- donde titulo es <p>Holaaa</p>
+//- h1=titulo
+//-     <p>Holaaa</p>
+//- h1!=titulo
+//-     Holaaa
+
+
+//- comparandolo con handlebars
+//- <h1>{{titulo}}</h1>
+//-     <p>Holaaa</p>
+//- <h1>{{{titulo}}}</h1>
+//-     Holaaa
+
+
+
+//- meter es un tag de html, similar al <input type="range">
+span(class='hola')=min
+meter(min=min max=max value=nivel)
+span=max

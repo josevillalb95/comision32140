@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/header') %>
+<!-- pug
+    include ../partials/header
+-->
+<!-- handlebars
+    {{> header}}
+-->
+<body>
+        <h1 style="color: green">
+            <%- titulo %>
+        </h1>
+        <!-- pug
+            h1 (style="color: green")!= titulo
+        -->
+        <!-- handlebars
+            <h1 style="color: green"> {{{titulo}}}</h1>
+        -->
+        <span><%= min %></span>
+        <meter value=<%=nivel%> min=<%=min%> max=<%=max%> ></meter>
+        <span><%= max %></span>
+        <%- include('./partials/footer') %>
+        <ul>
+            <% lista.forEach(text => { %>
+                <li> <%= text %> </li>
+            <% }); %>
+        </ul>
+        <!-- vs pug 
+            ul
+                each val in lista
+                    li= val
+        -->
+        <!-- vs handlebars
+            <ul>
+            {{#each lista}}
+                <li> {{this}} </li>
+            {{/each}}
+            </ul>
+        -->
+</body>
+</html>
