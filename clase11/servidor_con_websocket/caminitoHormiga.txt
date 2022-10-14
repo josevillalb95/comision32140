@@ -1,0 +1,33 @@
+primer paso 
+    el cliente se comunica con el server 
+    LINEA 1 INDEX.JS 
+    const socket = io();
+
+segundo paso 
+    LINEA 17 server.JS 
+    el servidor recibe esa conexion
+     y manda un log 
+    LINEA 18 server.JS 
+
+tercer paso 
+    LINEA 19 server.JS 
+    el servidor emite un msj llamado "messages" al cliente
+
+cuarto paso 
+    LINEA 18 index.JS 
+    el cliente recibe el mensaje y lo muestra en el texto
+
+quinto paso 
+    LINEA 9 index.JS 
+    el cliente completa el formulario y emite un mensaje al servidor 
+    llamado "chat"
+
+sexto paso 
+    EL SERVIDOR RECIBE UN LLAMDO DE CHAT 
+    LINEA 20 DE SERVER.JS
+
+
+
+
+
+
