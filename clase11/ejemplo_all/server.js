@@ -23,8 +23,12 @@ io.on('connection', (socket) => {
     // paso 4 conexion socket
     socket.on('notificacion', (hora)=>{
         logueoEntrada.push( socket.id+" entro: "+hora)
-        // paso 5 conexion socket
+        // paso 5 conexion a todos los socket
         io.sockets.emit('mensaje', logueoEntrada)
+        
+        // si quieren solamente comunicarse con la ventana/front 
+        // que mando ese evento puede mandarlo asi =>
+        // socket.emit('mensaje', logueoEntrada)
     })
 
 
