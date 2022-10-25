@@ -13,8 +13,8 @@ console.log( `DIVISION: ${operaciones.dividir(numero1,numero2)} `)
 // 3) ./node_modules/.bin/tsc --init
 // 4) CAMIAR OUTDIR POR ./dist
 // 5) scripts
-// build:"node_modules/.bin/tsc ./index.ts"
-// watch:"node_modules/.bin/tsc ./index.ts -w"
+// build:"node_modules/.bin/tsc"
+// watch:"node_modules/.bin/tsc -w"
 // start: "node ./dist/index.js"
 
 // --- ejecutar nodemon con ts ? 
