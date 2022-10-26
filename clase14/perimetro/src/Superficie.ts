@@ -1,17 +1,17 @@
-export default class Superficie {
+import { figura } from "./Ifigura.interface";
+import mensaje from "./Msj";
+export default class Superficie extends mensaje implements figura{ 
     constructor() {
+      super()
     }
-    private msj(operacion:string,valor:number):string{
-      return `La superficie del ${operacion} es ${valor}`;
-      
-    }
+  
     rectangulo(): string {
-      return this.msj('rectangulo',3212)
+      return super.msj('rectangulo',3212)
     }
     circulo(): string {
-      return this.msj('círculo',433)
+      return super.msj('círculo',433)
     }
     cuadrado(): string {
-      return this.msj('cuadrado',544)
+      return super.msj('cuadrado',544)
     }
    }

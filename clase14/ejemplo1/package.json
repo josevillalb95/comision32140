@@ -1,0 +1,17 @@
+{
+  "name": "ejemplo1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cod1.js",
+  "scripts": {
+    "build":"webpack ./cod1.ts ./cod2.js ./cod3.js --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}

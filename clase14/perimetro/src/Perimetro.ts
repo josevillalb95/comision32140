@@ -1,18 +1,17 @@
-export default class Perimetro {
+import { figura } from "./Ifigura.interface";
+import mensaje from "./Msj";
+export default class Perimetro extends mensaje implements figura {
     constructor() {
-    }
-    private msj(operacion:string,valor:number):string{
-      return `El perimetro del ${operacion} es ${valor}`;
-      
+      super()
     }
     rectangulo(): string {
-      return this.msj('rectangulo',123)
+      return super.msj('rectangulo',123)
     }
     circulo(): string {
-      return this.msj('círculo',54)
+      return super.msj('círculo',54)
     }
     cuadrado(): string {
-      return this.msj('cuadrado',43)
+      return super.msj('cuadrado',43)
     }
    }
    
