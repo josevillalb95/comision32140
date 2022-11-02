@@ -1,0 +1,61 @@
+
+
+
+npm install knex --save
+npm install mysql
+
+
+las bases de datos las debemos crear manualmente 
+
+
+CREAR CONEXION 
+var knex = require('knex')({
+  client: 'mysql',
+  connection: {
+    host: '127.0.0.1',
+    user: 'your_database_user',
+    password: 'your_database_password',
+    database: 'myapp_test'
+  }
+})
+
+
+CRER TABLA 
+const tabla= await knex.schema.createTable('books', (table) => {
+  table.increments('id')
+  table.string('title')
+  table.string('author')
+  table.integer('year')
+})
+
+
+BUSCAR 
+
+  knex
+  .from('books')
+  .select('title', 'author', 'year')
+
+
+INSERTAR 
+
+    knex
+    .from('books')
+    .insert({ title: 'Hola mundo!' ,author: 'programador',year: 2014 })
+// retorna el id de elemnto creado
+// siendo array retorna el id del primero
+
+
+ELIMINAR 
+    knex
+    .from('books')
+    .where({ year: 2014 })
+    .del()
+// retorna la cantidad de filas eliminadas
+
+
+UPDATE 
+    knex
+    .from('books')
+    .where({ year: 2014 })
+    .update({ year: 2011 })
+// retorna la cantidad de filas actualizadas
