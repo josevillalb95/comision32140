@@ -1,0 +1,33 @@
+schema 
+user {
+    name:string
+    direccion:string
+}
+db.user.insert({name:'jose',direccion:'pehuajo'})
+user {
+    name:string
+    direccion:{
+        altura:number
+        calle:string
+    }
+}
+ESTO DA ERROR PORQUE NO RESPETA EL SCHEMA -> db.user.insert({name:'jose',direccion:'pehuajo'})
+db.user.insert({name:'jose',direccion:{
+    calle:'colon',
+    altura:233
+} })
+
+db.user.find({})
+[
+    {   name:'jose',
+        direccion:'pehuajo'
+    },
+    {
+        name:'jose',
+        direccion:{
+            calle:'colon',
+            altura:233
+        } 
+    }
+]
+

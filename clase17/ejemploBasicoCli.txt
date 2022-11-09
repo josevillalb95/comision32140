@@ -1,0 +1,25 @@
+mongo cliente cli 
+
+
+*show databases 
+muestra mi lista de base de datos disponibles
+
+*use 'nombre de la base de datos'
+* use miBase
+
+lo que hace para entender...
+const db= new mibase()
+
+ahora 
+podemos ver las collection de mi db 
+
+* show collection
+mustra las colecciones por ejemplo personas
+
+/ va a buscar en la db "miBase" en la coleccion "personas" todos los elementos
+db.personas.find()
+/ va a buscar en la db "miBase" en la coleccion "personas"  lo elementos que tengan name:jose
+db.personas.find({name:'jose'})
+
+/ va a insertar en la db "miBase" en la coleccion "personas"  lo que le insertemos
+db.personas.insert({ name:'patricio'})

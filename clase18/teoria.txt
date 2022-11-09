@@ -1,0 +1,134 @@
+
+
+juego de datos
+{'nombre':'lapiz','precio':50,'stock':5}
+,{'nombre':'garrafa','precio':1600,'stock':15}
+,{'nombre':'mate','precio':1600,'stock':3}
+,{'nombre':'fernet','precio':1500,'stock':3}
+,{'nombre':'iphone','precio':15900,'stock':3}
+
+
+
+db.articulos.find( {$and: [ {'precio':1600 },{'stock':3} ] } )
+respuesta ,
+{'nombre':'mate','precio':1600,'stock':3}
+
+
+db.articulos.find( {$or: [ {'precio':1600 },{'stock':3} ] } )
+respuesta
+,{'nombre':'garrafa','precio':1600,'stock':15}
+,{'nombre':'mate','precio':1600,'stock':3}
+,{'nombre':'mate','precio':1600,'stock':3}
+,{'nombre':'fernet','precio':1500,'stock':3}
+,{'nombre':'iphone','precio':15900,'stock':3}
+
+
+db.articulos.find( { precio : { $lt : 1600} } )
+respuesta
+,{'nombre':'fernet','precio':1500,'stock':3}
+{'nombre':'lapiz','precio':50,'stock':5}
+
+
+db.articulos.find( { precio : { $lte : 1600} } )
+respuesta
+{'nombre':'lapiz','precio':50,'stock':5}
+,{'nombre':'garrafa','precio':1600,'stock':15}
+,{'nombre':'mate','precio':1600,'stock':3}
+,{'nombre':'fernet','precio':1500,'stock':3}
+
+
+db.articulos.find( { precio : { $gt : 1600} } )
+respuesta
+,{'nombre':'iphone','precio':15900,'stock':3}
+
+
+db.articulos.find( { precio : { $gte : 1600} } )
+respuesta
+,{'nombre':'iphone','precio':15900,'stock':3}
+,{'nombre':'garrafa','precio':1600,'stock':15}
+,{'nombre':'mate','precio':1600,'stock':3}
+
+
+
+
+
+juego de datos
+db.articulos.find( { provedor_name: {$exist:false }} )
+,{'nombre':'garrafa','precio':1600,'stock':15}
+,{'nombre':'mate','precio':1600,'stock':3}
+,{'nombre':'fernet','precio':1500,'stock':3}
+,{'nombre':'iphone','precio':15900,'stock':3}
+
+
+# es mas costoso hacer esto 
+    db.articulos.find( { nombre: {$ne:'iphone' }} )
+# que esto
+    const articulos= db.articulos.find()
+    articulos.filter( articulo => articulo.nombre != 'iphone')
+
+
+juego datos 
+{'nombre':'caja lapiz','precio':50,'stock':5, 'colores':['rojo','azul']}
+db.articulos.find( { colores: {$in:'azul' }} )
+
+
+
+{'nombre':'caja lapiz','precio':50,'stock':5, 'provedores':{ mapped:1,fabercaste:1 } }
+db.articulos.find( { provedores.mapped: 1} )
+
+
+
+
+projection 
+
+    find().projection( nombre:1 ) o find({},{nombre:1})
+    esto de arriba solo muestar el nombre  
+    find().projection( precio:0 )  o find({},{precio:0})
+    esto de arriba muestra todos los campos menos el precio 
+
+
+
+sort
+    ORDENA DE MENOR A MAYOR
+    db.articulos.find( ).sort({"precio": 1})
+
+    ORDENA DE MAYOR A MENOR 
+    db.articulos.find( ).sort({"precio": -1})
+
+
+
+UPDATA 
+
+    db.articulos.update( {LO QUE BUSCO },{ $set:{ OBJERO MODIFICADO  }})
+    
+    juego de datos
+    {'nombre':'lapiz blue','precio':51,'stock':3}
+
+
+    db.articulos.update({'nombre':'lapiz },{ $set:{'precio':58} }  )
+    resultado 
+    {'nombre':'lapiz blue','precio':58,'stock':3}
+
+    db.articulos.update({'nombre':'lapiz },{'precio':58}   )
+    resultado 
+    {'precio':58}
+
+
+
+
+//UPDATE DE MUCHOS ELEMENTOS 
+db.articulos.update({'precio':58},{ $set:{'precio':90} } , {multi:true }   )
+o esta forma 
+db.articulos.updateMany({'precio':58},{ $set:{'precio':90} } )
+
+
+crear un elemnto en base a un update 
+db.articulos.update({'nombre':'lapiz },{'precio':58} , {upsert:true}  )
+RESPUESTA    {'nombre':'lapiz','precio':58 }
+
+
+
+//delete  ( es recomendable usar baja logica osea un campo con true o false )
+
+db.articulos.deleteOne({QUERY})
+db.articulos.deleteMany({QUERY})
