@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+    <div class="card bg-light">
+      <div class="card-body">
+        <form action="{{url}}" method="{{metodo}}">
+          <div class="mb-3">
+            <label for="title">Titulo:</label>
+            <input
+              type="text"
+              name="title"
+              placeholder="Escribi un titulo"
+              class="form-control"
+              value="{{task.title}}"
+              autofocus
+            />
+          </div>
+          <div class="mb-3">
+            <label for="description">Descripcion:</label>
+            <textarea
+              name="description"
+              class="form-control"
+              placeholder="Escribi una descripcion"
+              rows="3"
+            >{{task.description}}</textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+          {{botonName}}
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
