@@ -1,0 +1,90 @@
+
+
+{
+    "id": 1,
+    "author": {
+        "id": 12,
+        "name": "Leanne Graham",
+        "username": "Bret",
+        "email": "Sincere@april.biz"
+    },
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+    "comments":[
+        {
+            "id": 4,
+            "name": "alias odio sit",
+            "email": "Lew@alysha.tv",
+            "body": "non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati"
+        },
+        {
+            "id": 5,
+            "name": "vero eaque aliquid doloribus et culpa",
+            "email": "Hayden@althea.biz",
+            "body": "harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et"
+        },
+        {
+            "id": 6,
+            "name": "et fugit eligendi deleniti quidem qui sint nihil autem",
+            "email": "Presley.Mueller@myrl.com",
+            "body": "doloribus at sed quis culpa deserunt consectetur qui praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut voluptate autem\nvoluptatem repellendus aspernatur dolorem in"
+        }
+    ]
+}
+
+
+// definiendo que el esquema de redundancia ( repeticion ) seria ... 
+// schema usuario
+// schema comentario 
+
+// articulos :{
+//     author : usuario,
+//     comments: [comentario]
+// }
+
+
+
+{
+    "entities":[
+        "authors":{
+            "12":{
+                "id": 12,
+                "name": "Leanne Graham",
+                "username": "Bret",
+                "email": "Sincere@april.biz"
+            }
+
+        },
+        "comments":{
+            "4":{
+                "id": 4,
+                "name": "alias odio sit",
+                "email": "Lew@alysha.tv",
+                "body": "non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati"
+            },
+            "5":{
+                "id": 5,
+                "name": "vero eaque aliquid doloribus et culpa",
+                "email": "Hayden@althea.biz",
+                "body": "harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et"
+            },
+            "6":{
+                "id": 6,
+                "name": "et fugit eligendi deleniti quidem qui sint nihil autem",
+                "email": "Presley.Mueller@myrl.com",
+                "body": "doloribus at sed quis culpa deserunt consectetur qui praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut voluptate autem\nvoluptatem repellendus aspernatur dolorem in"
+            }
+
+        }.
+        "posts":{
+            "1":{
+                "id": 1,
+                "author": 12,
+                "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+                "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+                "comments":[4,5,6]
+            }
+
+        }
+    ]
+}

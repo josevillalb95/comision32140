@@ -1,0 +1,15 @@
+{
+  "name": "normalizar_json",
+  "version": "1.0.0",
+  "description": "1. Imprimir por consola el objeto normalizado y la longitud del objeto original y del normalizado. Comparar los resultados.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "normalizr": "^3.6.2"
+  }
+}
