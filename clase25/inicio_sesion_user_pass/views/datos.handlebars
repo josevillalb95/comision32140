@@ -1,0 +1,10 @@
+{{#if user}}
+<p>Nombre: {{user.name}}</p>
+<p>Dirección: {{user.address}}</p>
+<p>Numero de visitas: {{user.contador}}</p>
+<form action="/logout" method="POST">
+	<div class='d-flex'>
+		<input class="btn btn-primary" type='submit' value='Cerrar sesión' />
+	</div>
+</form>
+{{/if}}

@@ -1,0 +1,20 @@
+{
+  "name": "inicio_sesion_user_pass",
+  "version": "1.0.0",
+  "description": "Basado en un proyecto express que almacene sesiones de usuario, realizar un sistema que:",
+  "main": "container.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "socket.io": "^4.5.1"
+  }
+}
