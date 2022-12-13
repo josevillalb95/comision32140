@@ -1,0 +1,17 @@
+{
+  "name": "entorno",
+  "version": "1.0.0",
+  "description": "",
+  "main": "desafio1.js",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start":"node example.js",
+    "test": "MODO='test' node example.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
