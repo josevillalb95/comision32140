@@ -1,0 +1,5 @@
+[2022-01-05T11:42:05.031] [INFO] prod - Servidor express escuchando en el puerto 8080
+[2022-01-05T11:49:04.081] [INFO] prod - Servidor express escuchando en el puerto 8080
+[2022-01-05T11:49:41.148] [WARN] prod - Ruta GET /perritos no implementada
+[2022-01-05T11:50:12.220] [ERROR] prod - Parámetros incorrectos para la suma
+[2023-01-03T20:26:07.823] [ERROR] prod - Parámetros incorrectos para la suma

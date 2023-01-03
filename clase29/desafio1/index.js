@@ -6,7 +6,7 @@ router.get('/',(req,res)=>{
     const fecha=new Date().toLocaleDateString()
     res.send(`Servidor express en (${PORT}) - PID (${process.pid}) - (${fecha}) xD `)
 })
-app.use('/',router)
+app.use('/datos',router)
 app.listen(PORT,()=>{
     console.log(`SERVIDOR ON ${PORT} - PDI ${process.pid} `)
 })
