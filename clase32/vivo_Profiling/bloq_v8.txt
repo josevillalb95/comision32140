@@ -1,0 +1,127 @@
+Statistical profiling result from bloq_v8.log, (25735 ticks, 6 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     37    0.1%          /usr/lib/system/libsystem_pthread.dylib
+     18    0.1%          /usr/lib/system/libsystem_c.dylib
+     16    0.1%          /usr/lib/system/libsystem_platform.dylib
+     15    0.1%          /usr/lib/system/libsystem_malloc.dylib
+     15    0.1%          /usr/lib/libc++.1.dylib
+      2    0.0%          /usr/lib/system/libsystem_kernel.dylib
+      1    0.0%          /usr/lib/libc++abi.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      3    0.0%    0.0%  LazyCompile: *normalizeString node:path:66:25
+      2    0.0%    0.0%  LazyCompile: *next /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/node_modules/express/lib/router/index.js:177:16
+      2    0.0%    0.0%  Function: ^normalizeParseOptions /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/node_modules/qs/lib/parse.js:204:59
+      2    0.0%    0.0%  Function: ^endReadableNT node:internal/streams/readable:1338:23
+      2    0.0%    0.0%  Function: ^emitBeforeScript node:internal/async_hooks:510:26
+      2    0.0%    0.0%  Function: ^Socket._writeGeneric node:net:791:42
+      1    0.0%    0.0%  RegExp: ^\/newUser\/?$
+      1    0.0%    0.0%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+      1    0.0%    0.0%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      1    0.0%    0.0%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      1    0.0%    0.0%  RegExp: (?:^|\/)\.?\.$
+      1    0.0%    0.0%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      1    0.0%    0.0%  LazyCompile: *fastparse /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/node_modules/parseurl/index.js:95:20
+      1    0.0%    0.0%  Function: ^updateOutgoingData node:_http_server:559:28
+      1    0.0%    0.0%  Function: ^update node:internal/crypto/hash:95:40
+      1    0.0%    0.0%  Function: ^set /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/node_modules/express/lib/application.js:359:23
+      1    0.0%    0.0%  Function: ^resolve node:path:1091:10
+      1    0.0%    0.0%  Function: ^realpathSync node:fs:2425:22
+      1    0.0%    0.0%  Function: ^process_params /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/node_modules/express/lib/router/index.js:338:47
+      1    0.0%    0.0%  Function: ^pbkdf2Sync node:internal/crypto/pbkdf2:68:20
+      1    0.0%    0.0%  Function: ^originalurl /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/node_modules/parseurl/index.js:65:22
+      1    0.0%    0.0%  Function: ^normalizeEncoding node:internal/util:160:27
+      1    0.0%    0.0%  Function: ^normalize node:path:1127:12
+      1    0.0%    0.0%  Function: ^get node:internal/bootstrap/pre_execution:382:8
+      1    0.0%    0.0%  Function: ^format /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/node_modules/content-type/index.js:65:17
+      1    0.0%    0.0%  Function: ^error /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/node_modules/serve-static/index.js:115:39
+      1    0.0%    0.0%  Function: ^emitAfterScript node:internal/async_hooks:518:25
+      1    0.0%    0.0%  Function: ^emit node:events:475:44
+      1    0.0%    0.0%  Function: ^afterWrite node:internal/streams/writable:487:20
+      1    0.0%    0.0%  Function: ^_storeHeader node:_http_outgoing:374:22
+      1    0.0%    0.0%  Function: ^_getMaxListeners node:events:404:26
+      1    0.0%    0.0%  Function: ^_finish node:_http_server:204:52
+      1    0.0%    0.0%  Function: ^_addHeaderLines node:_http_incoming:199:25
+      1    0.0%    0.0%  Function: ^ReadableState node:internal/streams/readable:78:23
+      1    0.0%    0.0%  Function: ^OutgoingMessage node:_http_outgoing:97:25
+      1    0.0%    0.0%  Function: ^Hash node:internal/crypto/hash:58:14
+
+ [C++]:
+   ticks  total  nonlib   name
+  24458   95.0%   95.4%  t auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::DebugOptions>(node::options_parser::OptionsParser<node::DebugOptions>::Implication, node::options_parser::OptionsParser<node::DebugOptions>* (node::EnvironmentOptions::*)())
+    801    3.1%    3.1%  T _posix_spawn_file_actions_adddup2
+     98    0.4%    0.4%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     59    0.2%    0.2%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     26    0.1%    0.1%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+     22    0.1%    0.1%  T _task_restartable_ranges_register
+     21    0.1%    0.1%  T __kernelrpc_mach_port_get_refs
+     16    0.1%    0.1%  T _mach_port_allocate
+      9    0.0%    0.0%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      9    0.0%    0.0%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      9    0.0%    0.0%  T _task_restartable_ranges_synchronize
+      8    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      6    0.0%    0.0%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      5    0.0%    0.0%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      5    0.0%    0.0%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  T ___getrlimit
+      2    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<node::CleanupHookCallback, void*>*> std::__1::__hash_table<node::CleanupHookCallback, node::CleanupHookCallback::Hash, node::CleanupHookCallback::Equal, std::__1::allocator<node::CleanupHookCallback> >::find<node::CleanupHookCallback>(node::CleanupHookCallback const&)
+      2    0.0%    0.0%  T node::fs::NewFSReqCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T _pid_for_task
+      1    0.0%    0.0%  t std::__1::__tree<int, std::__1::less<int>, std::__1::allocator<int> >::destroy(std::__1::__tree_node<int, void*>*)
+      1    0.0%    0.0%  t std::__1::__shared_ptr_pointer<char*, std::__1::default_delete<char []>, std::__1::allocator<char> >::__on_zero_shared_weak()
+      1    0.0%    0.0%  t node::fs::Stat(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::NonOwningExternalTwoByteResource::data() const
+      1    0.0%    0.0%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::OnStreamAlloc(unsigned long)
+      1    0.0%    0.0%  T node::loader::ModuleWrap::SetSyntheticExport(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::ThreadPoolWork::ScheduleWork()::'lambda'(uv_work_s*, int)::__invoke(uv_work_s*, int)
+      1    0.0%    0.0%  T node::InternalCallbackScope::InternalCallbackScope(node::Environment*, v8::Local<v8::Object>, node::async_context const&, int)
+      1    0.0%    0.0%  T node::Environment::RunAndClearNativeImmediates(bool)
+      1    0.0%    0.0%  T _task_name_for_pid
+      1    0.0%    0.0%  T _task_for_pid
+      1    0.0%    0.0%  T _socket
+      1    0.0%    0.0%  T _proc_set_dirty
+
+ [Summary]:
+   ticks  total  nonlib   name
+     43    0.2%    0.2%  JavaScript
+  25582   99.4%   99.8%  C++
+     30    0.1%    0.1%  GC
+    104    0.4%          Shared libraries
+      6    0.0%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+  24746  100.0%   96.2%  TOTAL
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  24458   95.0%  t auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::DebugOptions>(node::options_parser::OptionsParser<node::DebugOptions>::Implication, node::options_parser::OptionsParser<node::DebugOptions>* (node::EnvironmentOptions::*)())
+  24168   98.8%    t auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::DebugOptions>(node::options_parser::OptionsParser<node::DebugOptions>::Implication, node::options_parser::OptionsParser<node::DebugOptions>* (node::EnvironmentOptions::*)())
+  23467   97.1%      Function: ^pbkdf2Sync node:internal/crypto/pbkdf2:68:20
+  23319   99.4%        Function: ^<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/server.js:33:23
+  23319  100.0%          Function: ^handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/node_modules/express/lib/router/layer.js:86:49
+  23073   98.9%            Function: ^next /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/node_modules/express/lib/router/route.js:116:16
+    246    1.1%            LazyCompile: ~next /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/node_modules/express/lib/router/route.js:116:16
+    437    1.8%      LazyCompile: ~pbkdf2Sync node:internal/crypto/pbkdf2:68:20
+    388   88.8%        LazyCompile: ~<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/server.js:33:23
+    286   73.7%          Function: ^handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/node_modules/express/lib/router/layer.js:86:49
+    286  100.0%            LazyCompile: ~next /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/node_modules/express/lib/router/route.js:116:16
+    102   26.3%          LazyCompile: ~handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/node_modules/express/lib/router/layer.js:86:49
+    102  100.0%            LazyCompile: ~next /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/node_modules/express/lib/router/route.js:116:16
+     49   11.2%        LazyCompile: ~<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/server.js:15:21
+     49  100.0%          LazyCompile: ~handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/node_modules/express/lib/router/layer.js:86:49
+     49  100.0%            LazyCompile: ~next /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/vivo_Profiling/node_modules/express/lib/router/route.js:116:16
+
+    801    3.1%  T _posix_spawn_file_actions_adddup2
+

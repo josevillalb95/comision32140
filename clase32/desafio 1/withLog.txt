@@ -1,0 +1,529 @@
+Statistical profiling result from withlog.log, (3340 ticks, 12 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     66    2.0%          /usr/lib/system/libsystem_platform.dylib
+     44    1.3%          /usr/lib/system/libsystem_pthread.dylib
+     29    0.9%          /usr/lib/system/libsystem_malloc.dylib
+     21    0.6%          /usr/lib/system/libsystem_c.dylib
+     14    0.4%          /usr/lib/libc++.1.dylib
+      3    0.1%          /usr/lib/system/libsystem_m.dylib
+      3    0.1%          /usr/lib/system/libsystem_kernel.dylib
+      2    0.1%          /usr/lib/system/libdyld.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+    209    6.3%    6.6%  LazyCompile: *calcularRandoms /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:27:25
+     28    0.8%    0.9%  RegExp: [\u001B\u009B][[\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\d\/#&.:=?%@~_]+)*|[a-zA-Z\d]+(?:;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|(?:(?:\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~]))
+     10    0.3%    0.3%  LazyCompile: *groupArrayElements node:internal/util/inspect:1338:28
+      7    0.2%    0.2%  LazyCompile: *next /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/index.js:177:16
+      4    0.1%    0.1%  LazyCompile: *formatValue node:internal/util/inspect:745:21
+      3    0.1%    0.1%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      3    0.1%    0.1%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      2    0.1%    0.1%  LazyCompile: *send /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:111:25
+      2    0.1%    0.1%  LazyCompile: *removeListener node:events:689:28
+      2    0.1%    0.1%  LazyCompile: *onwrite node:internal/streams/writable:425:17
+      2    0.1%    0.1%  LazyCompile: *emit node:events:475:44
+      1    0.0%    0.0%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      1    0.0%    0.0%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      1    0.0%    0.0%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      1    0.0%    0.0%  RegExp: ;\s*charset\s*=
+      1    0.0%    0.0%  RegExp: ; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) *
+      1    0.0%    0.0%  LazyCompile: *slowCases node:internal/util:165:19
+      1    0.0%    0.0%  LazyCompile: *set /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/application.js:359:23
+      1    0.0%    0.0%  LazyCompile: *parserOnIncoming node:_http_server:857:26
+      1    0.0%    0.0%  LazyCompile: *parserOnHeadersComplete node:_http_common:77:33
+      1    0.0%    0.0%  LazyCompile: *fastparse /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/parseurl/index.js:95:20
+      1    0.0%    0.0%  LazyCompile: *endReadableNT node:internal/streams/readable:1338:23
+      1    0.0%    0.0%  LazyCompile: *end node:_http_outgoing:833:45
+      1    0.0%    0.0%  LazyCompile: *_storeHeader node:_http_outgoing:374:22
+      1    0.0%    0.0%  LazyCompile: *Readable.read node:internal/streams/readable:394:35
+      1    0.0%    0.0%  Function: ^value node:internal/console/constructor:321:20
+      1    0.0%    0.0%  Function: ^value node:internal/console/constructor:300:20
+      1    0.0%    0.0%  Function: ^validateString node:internal/validators:118:24
+      1    0.0%    0.0%  Function: ^storeHeader node:_http_outgoing:517:21
+      1    0.0%    0.0%  Function: ^send /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:111:25
+      1    0.0%    0.0%  Function: ^readableAddChunk node:internal/streams/readable:236:26
+      1    0.0%    0.0%  Function: ^processPromiseRejections node:internal/process/promises:211:34
+      1    0.0%    0.0%  Function: ^onEofChunk node:internal/streams/readable:533:20
+      1    0.0%    0.0%  Function: ^nextTick node:internal/process/task_queues:104:18
+      1    0.0%    0.0%  Function: ^newAsyncId node:internal/async_hooks:417:20
+      1    0.0%    0.0%  Function: ^inspect node:internal/util/inspect:292:17
+      1    0.0%    0.0%  Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+      1    0.0%    0.0%  Function: ^handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/layer.js:86:49
+      1    0.0%    0.0%  Function: ^getOptions node:internal/fs/utils:315:20
+      1    0.0%    0.0%  Function: ^get node:internal/streams/readable:1270:8
+      1    0.0%    0.0%  Function: ^fromString node:buffer:432:20
+      1    0.0%    0.0%  Function: ^entitytag /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/etag/index.js:39:20
+      1    0.0%    0.0%  Function: ^emit node:events:475:44
+      1    0.0%    0.0%  Function: ^debug /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/debug/src/debug.js:65:17
+      1    0.0%    0.0%  Function: ^clearBuffer node:internal/streams/writable:529:21
+      1    0.0%    0.0%  Function: ^afterWriteDispatched node:internal/stream_base_commons:155:30
+      1    0.0%    0.0%  Function: ^afterWrite node:internal/streams/writable:487:20
+      1    0.0%    0.0%  Function: ^_addHeaderLines node:_http_incoming:199:25
+      1    0.0%    0.0%  Function: ^Timeout.refresh node:internal/timers:210:37
+      1    0.0%    0.0%  Function: ^Socket._writeGeneric node:net:791:42
+      1    0.0%    0.0%  Function: ^Readable.resume node:internal/streams/readable:963:37
+      1    0.0%    0.0%  Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1    0.0%    0.0%  Function: ^Module node:internal/modules/cjs/loader:172:16
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:36:26
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/index.js:280:64
+
+ [C++]:
+   ticks  total  nonlib   name
+   2379   71.2%   75.3%  t auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::DebugOptions>(node::options_parser::OptionsParser<node::DebugOptions>::Implication, node::options_parser::OptionsParser<node::DebugOptions>* (node::EnvironmentOptions::*)())
+    113    3.4%    3.6%  T _task_restartable_ranges_synchronize
+     69    2.1%    2.2%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     55    1.6%    1.7%  T __kernelrpc_mach_port_get_refs
+     43    1.3%    1.4%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     28    0.8%    0.9%  t node::Buffer::(anonymous namespace)::CreateFromString(v8::FunctionCallbackInfo<v8::Value> const&)
+     25    0.7%    0.8%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+     20    0.6%    0.6%  T _posix_spawn_file_actions_adddup2
+     17    0.5%    0.5%  T _mach_port_allocate
+     15    0.4%    0.5%  T _task_restartable_ranges_register
+     10    0.3%    0.3%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      5    0.1%    0.2%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      4    0.1%    0.1%  T _mach_msg_server
+      3    0.1%    0.1%  T _socket
+      3    0.1%    0.1%  T ___getrlimit
+      2    0.1%    0.1%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      2    0.1%    0.1%  t std::__1::__hash_iterator<std::__1::__hash_node<node::CleanupHookCallback, void*>*> std::__1::__hash_table<node::CleanupHookCallback, node::CleanupHookCallback::Hash, node::CleanupHookCallback::Equal, std::__1::allocator<node::CleanupHookCallback> >::find<node::CleanupHookCallback>(node::CleanupHookCallback const&)
+      2    0.1%    0.1%  t node::fs::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.1%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.1%  t node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)
+      2    0.1%    0.1%  T node::AsyncWrap::EmitTraceEventBefore()
+      2    0.1%    0.1%  T _proc_set_dirty
+      2    0.1%    0.1%  T _pid_for_task
+      1    0.0%    0.0%  t void std::__1::__tree_balance_after_insert<std::__1::__tree_node_base<void*>*>(std::__1::__tree_node_base<void*>*, std::__1::__tree_node_base<void*>*)
+      1    0.0%    0.0%  t non-virtual thunk to node::PerIsolatePlatformData::NonNestableDelayedTasksEnabled() const
+      1    0.0%    0.0%  t non-virtual thunk to node::PerIsolatePlatformData::IdleTasksEnabled()
+      1    0.0%    0.0%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::NonOwningExternalTwoByteResource::data() const
+      1    0.0%    0.0%  t node::BaseObject::~BaseObject()
+      1    0.0%    0.0%  t node::AsyncHooks::pop_async_context(double)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &(node::(anonymous namespace)::Parser::on_message_begin())>::Raw(llhttp__internal_s*)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &(node::(anonymous namespace)::Parser::on_headers_complete())>::Raw(llhttp__internal_s*)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Initialize(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::ParseEncoding(v8::Isolate*, v8::Local<v8::Value>, node::encoding)
+      1    0.0%    0.0%  T node::InternalCallbackScope::~InternalCallbackScope()
+      1    0.0%    0.0%  T node::InternalCallbackScope::Close()
+      1    0.0%    0.0%  T node::BaseObject::MakeWeak()::'lambda'(v8::WeakCallbackInfo<node::BaseObject> const&)::__invoke(v8::WeakCallbackInfo<node::BaseObject> const&)
+      1    0.0%    0.0%  T node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*)
+      1    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventAfter(node::AsyncWrap::ProviderType, double)
+      1    0.0%    0.0%  T node::AsyncWrap::EmitAfter(node::Environment*, double)
+      1    0.0%    0.0%  T _task_set_special_port
+      1    0.0%    0.0%  T _semaphore_create
+      1    0.0%    0.0%  T _posix_spawnattr_setmacpolicyinfo_np
+      1    0.0%    0.0%  T _mig_get_reply_port
+
+ [Summary]:
+   ticks  total  nonlib   name
+    316    9.5%   10.0%  JavaScript
+   2830   84.7%   89.6%  C++
+    289    8.7%    9.2%  GC
+    182    5.4%          Shared libraries
+     12    0.4%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   2591   99.3%   77.6%  t auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::DebugOptions>(node::options_parser::OptionsParser<node::DebugOptions>::Implication, node::options_parser::OptionsParser<node::DebugOptions>* (node::EnvironmentOptions::*)())
+     16    0.6%    0.5%  T __kernelrpc_mach_port_get_refs
+      1    0.0%    0.0%  T node::ParseEncoding(v8::Isolate*, v8::Local<v8::Value>, node::encoding)
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   2379   71.2%  t auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::DebugOptions>(node::options_parser::OptionsParser<node::DebugOptions>::Implication, node::options_parser::OptionsParser<node::DebugOptions>* (node::EnvironmentOptions::*)())
+   1588   66.8%    t auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::DebugOptions>(node::options_parser::OptionsParser<node::DebugOptions>::Implication, node::options_parser::OptionsParser<node::DebugOptions>* (node::EnvironmentOptions::*)())
+    736   46.3%      LazyCompile: *calcularRandoms /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:27:25
+    731   99.3%        Function: ^<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:36:26
+    731  100.0%          Function: ^handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/layer.js:86:49
+    730   99.9%            Function: ^next /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/route.js:116:16
+    213   13.4%      Function: ^stringify /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:1145:20
+    213  100.0%        Function: ^json /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:250:25
+    213  100.0%          Function: ^<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:36:26
+    213  100.0%            Function: ^handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/layer.js:86:49
+    198   12.5%      Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+    198  100.0%        Function: ^writeGeneric node:internal/stream_base_commons:147:22
+    107   54.0%          LazyCompile: *_write node:internal/streams/writable:283:16
+    107  100.0%            Function: ^Writable.write node:internal/streams/writable:333:36
+     91   46.0%          Function: ^Socket._writeGeneric node:net:791:42
+     91  100.0%            Function: ^Socket._write node:net:828:35
+     38    2.4%      t auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::DebugOptions>(node::options_parser::OptionsParser<node::DebugOptions>::Implication, node::options_parser::OptionsParser<node::DebugOptions>* (node::EnvironmentOptions::*)())
+     14   36.8%        LazyCompile: *formatProperty node:internal/util/inspect:1810:24
+     10   71.4%          LazyCompile: *formatArray node:internal/util/inspect:1634:21
+     10  100.0%            Function: ^formatRaw node:internal/util/inspect:820:19
+      3   21.4%          LazyCompile: *formatRaw node:internal/util/inspect:820:19
+      3  100.0%            LazyCompile: *formatValue node:internal/util/inspect:745:21
+      1    7.1%          Function: ^formatArray node:internal/util/inspect:1634:21
+      1  100.0%            LazyCompile: ~formatRaw node:internal/util/inspect:820:19
+      5   13.2%        LazyCompile: *header /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:777:29
+      5  100.0%          Function: ^json /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:250:25
+      5  100.0%            Function: ^<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:36:26
+      4   10.5%        Function: ^format /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/content-type/index.js:65:17
+      3   75.0%          LazyCompile: *send /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:111:25
+      3  100.0%            Function: ^json /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:250:25
+      1   25.0%          Function: ^setCharset /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/utils.js:248:41
+      1  100.0%            Function: ^send /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:111:25
+      3    7.9%        Function: ^checkInvalidHeaderChar node:_http_common:232:32
+      3  100.0%          Function: ^<anonymous> node:_http_outgoing:564:45
+      3  100.0%            Function: ^setHeader node:_http_outgoing:574:57
+      2    5.3%        LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:507:36
+      2  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:572:30
+      2  100.0%            LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:572:30
+      2    5.3%        LazyCompile: *calcularRandoms /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:27:25
+      2  100.0%          Function: ^<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:36:26
+      2  100.0%            Function: ^handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/layer.js:86:49
+      2    5.3%        Function: ^expressInit /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/middleware/init.js:29:30
+      2  100.0%          Function: ^handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/layer.js:86:49
+      1   50.0%            LazyCompile: ~trim_prefix /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/index.js:293:23
+      1   50.0%            Function: ^trim_prefix /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/index.js:293:23
+      1    2.6%        LazyCompile: ~stringToPath /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/get-intrinsic/index.js:210:41
+      1  100.0%          LazyCompile: ~GetIntrinsic /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/get-intrinsic/index.js:253:39
+      1  100.0%            Function: ~<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/call-bind/index.js:1:1
+      1    2.6%        LazyCompile: ~merge /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/merge-descriptors/index.js:34:15
+      1  100.0%          LazyCompile: ~createApplication /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/express.js:37:27
+      1  100.0%            Function: ~<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:1:1
+      1    2.6%        LazyCompile: *setHeader node:_http_outgoing:574:57
+      1  100.0%          LazyCompile: *send /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:111:25
+      1  100.0%            Function: ^json /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:250:25
+      1    2.6%        Function: ^set /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/application.js:359:23
+      1  100.0%          Function: ^app.<computed> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/application.js:490:25
+      1  100.0%            Function: ^json /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:250:25
+      1    2.6%        Function: ^header /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:777:29
+      1  100.0%          Function: ^json /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:250:25
+      1  100.0%            Function: ^<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:36:26
+      1    2.6%        Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1  100.0%            Function: ^require node:internal/modules/cjs/helpers:101:31
+     36    2.3%      Function: ^writevGeneric node:internal/stream_base_commons:122:23
+     36  100.0%        Function: ^Socket._writeGeneric node:net:791:42
+     36  100.0%          Function: ^Socket._writev node:net:823:36
+     36  100.0%            Function: ^doWrite node:internal/streams/writable:398:17
+     35    2.2%      Function: ^update node:internal/crypto/hash:95:40
+     35  100.0%        Function: ^entitytag /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/etag/index.js:39:20
+     35  100.0%          Function: ^etag /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/etag/index.js:70:15
+     18   51.4%            Function: ^generateETag /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/utils.js:273:32
+     17   48.6%            LazyCompile: *send /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:111:25
+     25    1.6%      LazyCompile: *groupArrayElements node:internal/util/inspect:1338:28
+     19   76.0%        Function: ^reduceToSingleString node:internal/util/inspect:1902:30
+     17   89.5%          Function: ^formatRaw node:internal/util/inspect:820:19
+     17  100.0%            LazyCompile: *formatValue node:internal/util/inspect:745:21
+      2   10.5%          LazyCompile: *formatRaw node:internal/util/inspect:820:19
+      2  100.0%            LazyCompile: *formatValue node:internal/util/inspect:745:21
+      6   24.0%        LazyCompile: *reduceToSingleString node:internal/util/inspect:1902:30
+      6  100.0%          LazyCompile: *formatRaw node:internal/util/inspect:820:19
+      6  100.0%            LazyCompile: *formatValue node:internal/util/inspect:745:21
+    142    6.0%    Function: ^<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:36:26
+    142  100.0%      Function: ^handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/layer.js:86:49
+    141   99.3%        Function: ^next /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/route.js:116:16
+    141  100.0%          Function: ^dispatch /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/route.js:98:45
+    118   83.7%            LazyCompile: *next /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/index.js:177:16
+     23   16.3%            Function: ^handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/layer.js:86:49
+     87    3.7%    LazyCompile: *calcularRandoms /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:27:25
+     87  100.0%      Function: ^<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:36:26
+     87  100.0%        Function: ^handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/layer.js:86:49
+     85   97.7%          Function: ^next /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/route.js:116:16
+     85  100.0%            Function: ^dispatch /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/route.js:98:45
+      2    2.3%          LazyCompile: ~next /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/route.js:116:16
+      2  100.0%            Function: ^dispatch /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/route.js:98:45
+     24    1.0%    LazyCompile: *formatProperty node:internal/util/inspect:1810:24
+     15   62.5%      LazyCompile: *formatArray node:internal/util/inspect:1634:21
+     15  100.0%        Function: ^formatRaw node:internal/util/inspect:820:19
+     15  100.0%          LazyCompile: *formatValue node:internal/util/inspect:745:21
+     12   80.0%            Function: ^inspect node:internal/util/inspect:292:17
+      3   20.0%            LazyCompile: *inspect node:internal/util/inspect:292:17
+      9   37.5%      LazyCompile: *formatRaw node:internal/util/inspect:820:19
+      9  100.0%        LazyCompile: *formatValue node:internal/util/inspect:745:21
+      9  100.0%          LazyCompile: *inspect node:internal/util/inspect:292:17
+      9  100.0%            Function: ^formatWithOptionsInternal node:internal/util/inspect:2048:35
+
+    209    6.3%  LazyCompile: *calcularRandoms /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:27:25
+    208   99.5%    Function: ^<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:36:26
+    208  100.0%      Function: ^handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/layer.js:86:49
+    208  100.0%        Function: ^next /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/route.js:116:16
+    208  100.0%          Function: ^dispatch /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/route.js:98:45
+    159   76.4%            LazyCompile: *next /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/index.js:177:16
+     49   23.6%            Function: ^handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/layer.js:86:49
+
+    113    3.4%  T _task_restartable_ranges_synchronize
+
+     69    2.1%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     69  100.0%    t auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::DebugOptions>(node::options_parser::OptionsParser<node::DebugOptions>::Implication, node::options_parser::OptionsParser<node::DebugOptions>* (node::EnvironmentOptions::*)())
+     40   58.0%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     37   92.5%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      8   21.6%          Function: ~<anonymous> node:crypto:1:1
+      8  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      7   18.9%          Function: ~<anonymous> node:http:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    8.1%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    8.1%          Function: ~<anonymous> node:internal/child_process:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    8.1%          Function: ~<anonymous> node:child_process:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    8.1%          Function: ~<anonymous> node:_http_client:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    5.4%          LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      2  100.0%            LazyCompile: ~get node:crypto:287:8
+      2    5.4%          Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.7%          LazyCompile: ~listenInCluster node:net:1410:25
+      1  100.0%            LazyCompile: ~Server.listen node:net:1453:35
+      1    2.7%          LazyCompile: ~lazyLoadStreams node:fs:2858:25
+      1  100.0%            LazyCompile: ~get ReadStream node:fs:3001:17
+      1    2.7%          Function: ~<anonymous> node:tty:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.7%          Function: ~<anonymous> node:internal/crypto/pbkdf2:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.7%          Function: ~<anonymous> node:_http_outgoing:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.7%          Function: ~<anonymous> node:_http_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    7.5%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      3  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      3  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     29   42.0%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     29  100.0%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      6   20.7%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      6  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      5   17.2%          Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      5  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4   13.8%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:477:29
+      4  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      3   10.3%          Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    6.9%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    6.9%          Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    6.9%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.4%          LazyCompile: ~initializeSourceMapsHandlers node:internal/bootstrap/pre_execution:516:38
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1    3.4%          Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    3.4%          Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    3.4%          Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    3.4%          Function: ~<anonymous> node:internal/blocklist:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+
+     66    2.0%  /usr/lib/system/libsystem_platform.dylib
+     57   86.4%    t auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::DebugOptions>(node::options_parser::OptionsParser<node::DebugOptions>::Implication, node::options_parser::OptionsParser<node::DebugOptions>* (node::EnvironmentOptions::*)())
+     49   86.0%      LazyCompile: *calcularRandoms /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:27:25
+     49  100.0%        Function: ^<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:36:26
+     49  100.0%          Function: ^handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/layer.js:86:49
+     49  100.0%            Function: ^next /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/route.js:116:16
+      2    3.5%      LazyCompile: *header /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:777:29
+      1   50.0%        LazyCompile: *send /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:111:25
+      1  100.0%          Function: ^json /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:250:25
+      1  100.0%            Function: ^<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:36:26
+      1   50.0%        Function: ^json /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:250:25
+      1  100.0%          Function: ^<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:36:26
+      1  100.0%            Function: ^handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/layer.js:86:49
+      1    1.8%      LazyCompile: ~value node:internal/console/constructor:321:20
+      1  100.0%        LazyCompile: ~log node:internal/console/constructor:359:6
+      1  100.0%          t auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::DebugOptions>(node::options_parser::OptionsParser<node::DebugOptions>::Implication, node::options_parser::OptionsParser<node::DebugOptions>* (node::EnvironmentOptions::*)())
+      1  100.0%            LazyCompile: ~<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:48:33
+      1    1.8%      LazyCompile: ~setupPerfHooks node:internal/bootstrap/pre_execution:283:24
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.8%      LazyCompile: ~Socket._writeGeneric node:net:791:42
+      1  100.0%        LazyCompile: ~Socket._write node:net:828:35
+      1  100.0%          LazyCompile: ~writeOrBuffer node:internal/streams/writable:365:23
+      1  100.0%            LazyCompile: ~_write node:internal/streams/writable:283:16
+      1    1.8%      Function: ~<anonymous> node:internal/fs/rimraf:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            Function: ~<anonymous> node:internal/fs/promises:1:1
+      1    1.8%      Function: ^stringify /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:1145:20
+      1  100.0%        Function: ^json /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/response.js:250:25
+      1  100.0%          Function: ^<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:36:26
+      1  100.0%            Function: ^handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/layer.js:86:49
+      1    1.8%      Function: ^setHeader node:_http_outgoing:574:57
+      1  100.0%        Function: ^expressInit /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/middleware/init.js:29:30
+      1  100.0%          Function: ^handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^trim_prefix /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/index.js:293:23
+      1    1.5%    LazyCompile: *writevGeneric node:internal/stream_base_commons:122:23
+      1  100.0%      Function: ^Socket._writeGeneric node:net:791:42
+      1  100.0%        Function: ^Socket._writev node:net:823:36
+      1  100.0%          Function: ^doWrite node:internal/streams/writable:398:17
+      1  100.0%            LazyCompile: *end node:_http_outgoing:833:45
+
+     55    1.6%  T __kernelrpc_mach_port_get_refs
+     16   29.1%    LazyCompile: *writevGeneric node:internal/stream_base_commons:122:23
+     16  100.0%      Function: ^Socket._writeGeneric node:net:791:42
+     16  100.0%        Function: ^Socket._writev node:net:823:36
+     16  100.0%          Function: ^doWrite node:internal/streams/writable:398:17
+     16  100.0%            LazyCompile: *end node:_http_outgoing:833:45
+     11   20.0%    t auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::DebugOptions>(node::options_parser::OptionsParser<node::DebugOptions>::Implication, node::options_parser::OptionsParser<node::DebugOptions>* (node::EnvironmentOptions::*)())
+      1    9.1%      LazyCompile: ~setStreamTimeout node:internal/stream_base_commons:237:26
+      1  100.0%        LazyCompile: ~resOnFinish node:_http_server:793:21
+      1  100.0%          LazyCompile: ~emit node:events:475:44
+      1  100.0%            LazyCompile: ~onFinish node:_http_outgoing:828:18
+      1    9.1%      LazyCompile: ~hasNativeSymbols /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/has-symbols/index.js:6:43
+      1  100.0%        Function: ~<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/get-intrinsic/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    9.1%      LazyCompile: ~finishMaybe node:internal/streams/writable:731:21
+      1  100.0%        LazyCompile: ~afterWrite node:internal/streams/writable:487:20
+      1  100.0%          LazyCompile: ~afterWriteTick node:internal/streams/writable:482:24
+      1  100.0%            LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    9.1%      LazyCompile: ~finalhandler /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/finalhandler/index.js:77:23
+      1  100.0%        Function: ^handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/application.js:165:29
+      1  100.0%          Function: ^app /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/express.js:38:21
+      1  100.0%            Function: ^emit node:events:475:44
+      1    9.1%      LazyCompile: ~callback node:internal/streams/writable:550:44
+      1  100.0%        LazyCompile: ~afterWrite node:internal/streams/writable:487:20
+      1  100.0%          LazyCompile: ~afterWriteTick node:internal/streams/writable:482:24
+      1  100.0%            Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    9.1%      LazyCompile: ~cache node:internal/http:26:15
+      1  100.0%        LazyCompile: ~utcDate node:internal/http:21:17
+      1  100.0%          LazyCompile: ~_storeHeader node:_http_outgoing:374:22
+      1  100.0%            LazyCompile: ~writeHead node:_http_server:270:19
+      1    9.1%      LazyCompile: ~alloc node:internal/freelist:15:8
+      1  100.0%        Function: ^connectionListenerInternal node:_http_server:448:36
+      1  100.0%          Function: ^defaultTriggerAsyncIdScope node:internal/async_hooks:456:36
+      1  100.0%            Function: ^connectionListener node:_http_server:442:28
+      1    9.1%      LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%        LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:70:31
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    9.1%      Function: ~<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/mime-types/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    9.1%      Function: ~<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/http-errors/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    9.1%      Function: ^utcDate node:internal/http:21:17
+      1  100.0%        Function: ^_storeHeader node:_http_outgoing:374:22
+      1  100.0%          Function: ^writeHead node:_http_server:270:19
+      1  100.0%            Function: ^_implicitHeader node:_http_server:265:68
+
+     44    1.3%  /usr/lib/system/libsystem_pthread.dylib
+     38   86.4%    t auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::DebugOptions>(node::options_parser::OptionsParser<node::DebugOptions>::Implication, node::options_parser::OptionsParser<node::DebugOptions>* (node::EnvironmentOptions::*)())
+      3    7.9%      t auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::DebugOptions>(node::options_parser::OptionsParser<node::DebugOptions>::Implication, node::options_parser::OptionsParser<node::DebugOptions>* (node::EnvironmentOptions::*)())
+      1   33.3%        LazyCompile: ~getStack /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/depd/index.js:381:19
+      1  100.0%          LazyCompile: ~depd /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/depd/index.js:103:15
+      1  100.0%            Function: ~<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/body-parser/index.js:1:1
+      1   33.3%        LazyCompile: ~getCurrentNodeMethods /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/methods/index.js:29:31
+      1  100.0%          Function: ~<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/methods/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      1   33.3%        LazyCompile: ~<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:48:33
+      1  100.0%          LazyCompile: ~onceWrapper node:events:636:21
+      1  100.0%            LazyCompile: ~emit node:events:475:44
+      3    7.9%      LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:89:28
+      3  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      3  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      3    7.9%      Function: ~<anonymous> node:internal/fs/promises:1:1
+      3  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      3  100.0%            Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      2    5.3%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      2  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      2  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:70:31
+      2    5.3%      LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:142:29
+      2  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      2  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2    5.3%      LazyCompile: ~realpathSync node:fs:2425:22
+      2  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      2  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      2    5.3%      LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      2  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2    5.3%      LazyCompile: ~fastparse /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/parseurl/index.js:95:20
+      2  100.0%        LazyCompile: ~parseurl /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/parseurl/index.js:35:19
+      2  100.0%          LazyCompile: ~getPathname /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/index.js:537:21
+      2  100.0%            LazyCompile: ~next /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/index.js:177:16
+      2    5.3%      LazyCompile: ~Duplex node:internal/streams/duplex:52:16
+      2  100.0%        LazyCompile: ~Socket node:net:285:16
+      2  100.0%          LazyCompile: ~WriteStream node:tty:85:21
+      2  100.0%            LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1    2.6%      LazyCompile: ~wrap /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/on-finished/index.js:219:15
+      1  100.0%        LazyCompile: ~onFinished /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/on-finished/index.js:46:21
+      1  100.0%          LazyCompile: ~send /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/finalhandler/index.js:272:15
+      1  100.0%            LazyCompile: ~<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/finalhandler/index.js:86:19
+      1    2.6%      LazyCompile: ~value node:internal/console/constructor:321:20
+      1  100.0%        LazyCompile: ~log node:internal/console/constructor:359:6
+      1  100.0%          t auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::DebugOptions>(node::options_parser::OptionsParser<node::DebugOptions>::Implication, node::options_parser::OptionsParser<node::DebugOptions>* (node::EnvironmentOptions::*)())
+      1  100.0%            LazyCompile: ~<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/server.js:48:33
+      1    2.6%      LazyCompile: ~setupWebCrypto node:internal/bootstrap/pre_execution:170:24
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.6%      LazyCompile: ~resolve node:path:1091:10
+      1  100.0%        LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:89:28
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.6%      LazyCompile: ~getPathname /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/index.js:537:21
+      1  100.0%        LazyCompile: ~next /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/index.js:177:16
+      1  100.0%          LazyCompile: ~handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/router/index.js:136:31
+      1  100.0%            LazyCompile: ~handle /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/application.js:165:29
+      1    2.6%      LazyCompile: ~getOptions node:internal/fs/utils:315:20
+      1  100.0%        LazyCompile: ~realpathSync node:fs:2425:22
+      1  100.0%          LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1    2.6%      LazyCompile: ~get node:internal/bootstrap/pre_execution:382:8
+      1  100.0%        t auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::DebugOptions>(node::options_parser::OptionsParser<node::DebugOptions>::Implication, node::options_parser::OptionsParser<node::DebugOptions>* (node::EnvironmentOptions::*)())
+      1  100.0%          LazyCompile: ~etag /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/etag/index.js:70:15
+      1  100.0%            LazyCompile: ~generateETag /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/express/lib/utils.js:273:32
+      1    2.6%      LazyCompile: ~debug node:internal/util/debuglog:76:15
+      1  100.0%        LazyCompile: ~logger node:internal/util/debuglog:95:18
+      1  100.0%          LazyCompile: ~write_ node:_http_outgoing:730:16
+      1  100.0%            LazyCompile: ~end node:_http_outgoing:833:45
+      1    2.6%      LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1  100.0%        LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:137:19
+      1  100.0%          Function: ~<anonymous> /Users/u632108/Desktop/proyectos/coderhouse/comision32140/clase32/profiling/desafios/1/node_modules/debug/src/node.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      1    2.6%      LazyCompile: ~compileFunction node:vm:308:25
+      1  100.0%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    2.6%      LazyCompile: ~cache node:internal/http:26:15
+      1  100.0%        LazyCompile: ~utcDate node:internal/http:21:17
+      1  100.0%          LazyCompile: ~_storeHeader node:_http_outgoing:374:22
+      1  100.0%            LazyCompile: ~writeHead node:_http_server:270:19
+      1    2.6%      LazyCompile: ~addListener node:events:618:58
+      1  100.0%        LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:142:29
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.6%      LazyCompile: ~Socket.read node:net:661:33
+      1  100.0%        LazyCompile: ~Socket node:net:285:16
+      1  100.0%          LazyCompile: ~onconnection node:net:1587:22
+      1    2.6%      LazyCompile: ~Module._resolveLookupPaths node:internal/modules/cjs/loader:667:38
+      1  100.0%        LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    2.6%      LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%        LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            LazyCompile: ~Module.require node:internal/modules/cjs/loader:997:36
+      1    2.6%      Function: ~<anonymous> node:internal/modules/cjs/helpers:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1    2.6%      Function: ~<anonymous> node:internal/main/run_main_module:1:1
+
+     43    1.3%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     43  100.0%    t auto node::options_parser::OptionsParser<node::EnvironmentOptions>::Convert<node::DebugOptions>(node::options_parser::OptionsParser<node::DebugOptions>::Implication, node::options_parser::OptionsParser<node::DebugOptions>* (node::EnvironmentOptions::*)())
+     40   93.0%      Function: ^compileFunction node:vm:308:25
+     37   92.5%        Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+     36   97.3%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+     20   55.6%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     16   44.4%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    2.7%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      3    7.5%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+      3  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      3  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      3    7.0%      LazyCompile: ~compileFunction node:vm:308:25
+      3  100.0%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+      3  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      3  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+

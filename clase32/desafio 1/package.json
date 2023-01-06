@@ -1,0 +1,19 @@
+{
+  "type": "commonjs",
+  "name": "ejemplo-cluster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --prof server.js",
+    "test-debug": "artillery quick -c 50 -n 50 'http://localhost:8080/ramdom-debug' > artillery_slow.txt",
+    "test-no-debug": "artillery quick -c 50 -n 50 'http://localhost:8080/ramdom-nodebug' > artillery_fast.txt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1"
+  }
+}
