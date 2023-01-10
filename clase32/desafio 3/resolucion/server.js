@@ -43,7 +43,6 @@ else {
         }
         return randoms
     }
-
     app.get('/ramdom-debug', (req,res) => {
         let randoms = calcularRandoms(0,9,10000)
         console.log(randoms)
