@@ -1,0 +1,75 @@
+inyeccion
+
+    app.get( "/login",(req,res)=>{
+        const token=req.query.token
+        (toke)=>{
+            return  SELECT * FROM user WHERE "token"=token
+        }
+    }
+
+    CURL get algo/login?token=" 2 OR 1=1 "
+
+    resultado 
+        SELECT * FROM user WHERE "token"=2 OR 1=1
+
+    esto da okey y devuleve el primer user que seguramente es el admin 
+
+
+_ _ _ _ _ _
+        
+exposicion de datos sensibles
+    token_mio+
+    netflix2.com/perfil/123434222
+    {
+        id:123434222
+        user:
+        pass
+        localidad
+        credit-card:{
+            num:
+            sercret:
+            venc:
+        }
+    }
+
+    token_mio+
+    netflix2.com/perfil/123434223
+    {
+        id:123434223
+        user:
+        pass
+        localidad
+        credit-card:{
+            num:
+            sercret:
+            venc:
+        }
+    }
+
+- - - - - -
+Pérdida de control de acceso
+tipos de user 
+    posteador
+    editor
+    lector 
+
+login por token => tipo 
+    si el token no esta sifrado puedo modifcar el tipo 
+    user.posteador 
+        puedo hacer mas cosas
+
+----- 
+
+
+"JsdosSDDss".toLowerCase()
+retorna
+'jsdossddss'
+
+
+String.prototype.toLowerCase= ()=> console.log("te hakieeeeeeeeee")
+()=> console.log("te hakieeeeeeeeee")
+
+
+"JsdosSDDss".toLowerCase()
+retorna
+"te hakieeeeeeeeee"
