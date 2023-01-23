@@ -1,0 +1,58 @@
+<div class="container my-5">
+  <div class="jumbotron">
+    <div>
+      <h1>Hola {{username}}</h1>
+      <div class="text-left">
+        <button
+          class="btn btn-success my-3"
+          onclick="location.href = '/logout'"
+        >Logout</button>
+      </div>
+    </div>
+    <hr />
+    <ul class="chat-thread" id="chat-thread"> </ul>
+    <form class="chat-window" id="formChat">
+      <input
+        class="chat-window-message"
+        id="chatText"
+        name="chat-window-message"
+        type="text"
+        autocomplete="off"
+        autofocus
+        placeholder="Escribe.."
+      />
+      <input type="submit" />
+    </form>
+  </div>
+</div>
+
+<script>
+  const userName = '{{username}}' 
+  const socket = io(); 
+  socket.on('messages', messages => {
+    chatBox.innerHTML = ''; 
+    messages.forEach(message => {
+      const me = userName === message.user 
+      chatBox.innerHTML += ` 
+        <li class='${me ? 'me' :'other'}'> 
+          ${me 
+            ? message.message 
+            :`<span>${message.user}</span>${message.message}`
+          } 
+        </li> `;
+    })
+    chatBox.scrollTop = chatBox.scrollHeight;
+  }); 
+  const chatForm = document.querySelector('#formChat'); 
+  const chatText = document.querySelector('#chatText'); 
+  const chatBox = document.querySelector('#chat-thread'); 
+  chatForm.addEventListener('submit', e => {
+    e.preventDefault(); 
+    socket.emit('chat', {
+      messageId: socket.id, 
+      user: userName,
+      message: chatText.value
+    }); 
+    chatText.value = '';
+  });
+</script>

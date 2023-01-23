@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="/socket.io/socket.io.js"></script>
+    <style>
+      @import 'https://fonts.googleapis.com/css?family=Noto+Sans'; body {
+      padding: 0; margin: 0; background: -moz-linear-gradient(-45deg, #183850 0,
+      #183850 25%, #192C46 50%, #22254C 75%, #22254C 100%); background:
+      -webkit-linear-gradient(-45deg, #183850 0, #183850 25%, #192C46 50%,
+      #22254C 75%, #22254C 100%); background-repeat: no-repeat;
+      background-attachment: fixed; } ::-webkit-scrollbar { width: 10px; }
+      ::-webkit-scrollbar-track { border-radius: 10px; background-color:
+      rgba(25, 147, 147, 0.1); } ::-webkit-scrollbar-thumb { border-radius:
+      10px; background-color: rgba(25, 147, 147, 0.2); } .chat-thread {
+      max-height: 600px; margin: 24px auto 0 auto; padding: 0 20px 0 0;
+      list-style: none; overflow-y: scroll; overflow-x: hidden; } .chat-thread
+      li { word-break: break-all;position: relative; clear: both; display:
+      inline-block; padding: 16px 40px 16px 20px; margin: 0 0 20px 0; font:
+      16px/20px "Noto Sans", sans-serif; border-radius: 10px; background-color:
+      rgba(25, 147, 147, 0.2); } /* Chat - Avatar */ .chat-thread li:before {
+      position: absolute; top: 0; width: 50px; height: 50px; border-radius:
+      50px; content: ""; } /* Chat - Speech Bubble Arrow */ .chat-thread
+      li:after { position: absolute; top: 15px; content: ""; width: 0; height:
+      0; border-top: 15px solid rgba(25, 147, 147, 0.2); } .chat-thread li.other
+      { animation: show-chat-odd 0.15s 1 ease-in; -moz-animation: show-chat-odd
+      0.15s 1 ease-in; -webkit-animation: show-chat-odd 0.15s 1 ease-in; float:
+      right; max-width: 80%; padding-top: 8px; } .chat-thread li.other span {
+      display: block; text-align: end; font-size: 10px; margin-bottom: 3px; }
+      .chat-thread li.other:before { right: -80px; } .chat-thread li.other:after
+      { border-right: 15px solid transparent; right: -15px; } .chat-thread li.me
+      { animation: show-chat-even 0.15s 1 ease-in; -moz-animation:
+      show-chat-even 0.15s 1 ease-in; -webkit-animation: show-chat-even 0.15s 1
+      ease-in; float: left; max-width: 80%; color: #20264a; margin-left: 15px;}
+      .chat-thread li.me:before { left: -80px; } .chat-thread li.me:after {
+      border-left: 15px solid transparent; left: -15px; } .chat-window { width:
+      100%; padding: 10px 0; margin: 10px 0; position:relative;} .chat-window
+      input[type='submit']{ position: absolute; z-index: 1; top: 20px; /*
+      bottom: 100%; */ right: 10px; color: #fff; border: none; background:
+      #248A52; font-size: 10px; text-transform: uppercase; line-height: 1;
+      padding: 6px 10px; border-radius: 10px; outline: none!important;
+      transition: background .2s ease; display: block; height: 30px; }
+      .chat-window-message { width: calc( 100% - 80px ); height: 48px;
+      border-bottom: 1px solid rgba(25, 147, 147, 0.2); outline: none; border:
+      none; border-radius: 13px; box-shadow: #a09d9d 1px 1px 5px; padding: 10px;
+      } /* Small screens */ @media all and (max-width: 767px) { .chat-thread {
+      height: 260px; } and large screens */ @media all and (min-width: 768px) {
+      .chat-thread { height: 320px; } } @keyframes show-chat-even { 0% {
+      margin-left: -480px; } 100% { margin-left: 0; } } @-moz-keyframes
+      show-chat-even { 0% { margin-left: -480px; } 100% { margin-left: 0; } }
+      @-webkit-keyframes show-chat-even { 0% { margin-left: -480px; } 100% {
+      margin-left: 0; } } @keyframes show-chat-odd { 0% { margin-right: -480px;
+      } 100% { margin-right: 0; } } @-moz-keyframes show-chat-odd { 0% {
+      margin-right: -480px; } 100% { margin-right: 0; } } @-webkit-keyframes
+      show-chat-odd { 0% { margin-right: -480px; } 100% { margin-right: 0; } }
+    </style>
+    <title>CHAT AFTER</title>
+  </head>
+  <body>
+    {{{body}}}
+  </body>
+</html>
