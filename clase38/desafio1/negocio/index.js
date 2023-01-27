@@ -1,0 +1,1 @@
+export * as opMath from "./operaciones.js";
