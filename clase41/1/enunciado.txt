@@ -1,0 +1,22 @@
+Realizar un esqueleto de servidor MVC basado en Node.js y express.
+Este debe tener separado en capas donde se encuentren carpetas para resolver:
+
+- La capa de ruteo
+- El controlador
+- La lógica de negocio
+- Las validaciones de nuestros datos
+- La capa de persistencia (DAO, DTO)
+
+Realizar una simple ruta get y una post para pedir e incorporar palabras a un array de strings persistidos en memoria, siguiendo la lógica de la separación del proceso en capas.
+
+Cada palabra que ingrese por post se debe almacenar en el array dentro de un objeto que contenga un timestamp. Ej.
+[
+    { id: 1, palabra: "Hola", timestamp: 1624450180112 },
+    { id: 2, palabra: "que", timestamp: 1624450189685 },
+    { id: 3, palabra: "tal", timestamp: 1624450195068 } 
+    ...
+]
+
+Con el get se traerá la frase completa en formato string.
+
+Probar la operación con postman.

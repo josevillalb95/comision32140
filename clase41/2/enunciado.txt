@@ -1,0 +1,9 @@
+Realizar una sencilla página web front en HTML/JS (send.html) que al ejecutarse dentro del navegador, en un proceso independiente al servidor del desafío anterior (puede estar servida por el live server de visual studio code), le envíe a este por post una palabra al azar. 
+
+No hace falta realizar la vista, el HTML estará para contener el script de ejecución. 
+
+Utilizar axios en el front para emitir dicho request.
+
+Así mismo, realizaremos otra página web (receive.html) similar a la anterior, que al ejecutar su script interno, genere un request al mismo servidor en su ruta get para obtener la frase completa almacenada, representando por consola o en la vista del documento dicha frase.
+
+Considerar el uso de CORS en el servidor para permitir los request de dominios cruzados.
