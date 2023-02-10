@@ -1,0 +1,7 @@
+Utilizando mocha, realizar un test de funcionamiento al servidor realizado en el desafío anterior.
+
+Realizar una suite de test que envíe al servidor 10 números consecutivos en su ruta '/ingreso' y luego comprobar en '/egreso' que esos números estén en cantidad y en orden.
+
+Integrar axios a la suite de test para realizar los request y utilizar sintaxis async await.
+
+Arrancar el servidor y luego el proceso de test.

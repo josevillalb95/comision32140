@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "name": "resolucion",
+  "version": "1.0.0",
+  "main": "cliente.js",
+  "scripts": {
+    "test": "mocha super.test.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "axios": "^0.24.0",
+    "chai": "^4.3.7",
+    "mocha": "^9.2.2",
+    "supertest": "^6.3.3"
+  }
+}
