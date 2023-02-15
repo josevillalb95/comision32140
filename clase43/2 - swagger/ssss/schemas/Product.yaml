@@ -1,0 +1,23 @@
+# Product
+components:
+  schemas:
+    Product:
+      type: object
+      required:
+        - id
+        - nombre
+        - precio
+      properties:
+        id:
+          type: string
+          description: id auto generado
+        nombre:
+          type: string
+          description: nombre del producto
+        precio:
+          type: number
+          description: precio del producto
+      example:
+        id: 423432adsfdsaf333
+        nombre: notebook
+        precio: 170000

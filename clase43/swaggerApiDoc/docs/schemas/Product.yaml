@@ -1,0 +1,28 @@
+# Product
+components:
+  schemas:
+    Product:
+      type: object
+      required:
+        - id
+        - title
+        - price
+        - thumbnail
+      properties:
+        id:
+          type: string
+          description: The auto-generated id of the book.
+        title:
+          type: string
+          description: The title of the product.
+        price:
+          type: number
+          description: The price of the product.
+        thumbnail:
+          type: string
+          description: The URL of the product thumbnail.
+      example:
+         id: 4ughd73658fnsk85dh58sk
+         title: desktop computer
+         price: 123.78
+         thumbnail: http://photo.url.png

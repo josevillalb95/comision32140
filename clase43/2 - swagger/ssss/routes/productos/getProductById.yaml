@@ -1,0 +1,22 @@
+paths:
+  /productos/{id}:
+    get:
+      summary: get one product
+      tags:
+        - Productos
+      parameters:
+        - name: id
+        in: path
+        description: id del producto a buscar
+        required: true
+        type: string
+      responses:
+        "200":
+          description: 'un producto'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        "404":
+          description: 'producto no encontrado'
+
