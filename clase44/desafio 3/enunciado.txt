@@ -1,0 +1,7 @@
+Realizar las modificaciones para que el servidor desarrollado en los desafíos anteriores presente una correcta separación en capas. Esto debe incluir:
+La capa de ruteo (donde se levanta el servidor express)
+Los controladores (quienes conectan los root resolvers con los métodos de la api)
+La lógica de negocio (donde se realizan las validaciones y se interactua con la capa de persistencia)
+Los modelos (dentro de ellos se realizan las validaciones)
+La capa de persistencia (utilizando adecuadamente DAOs y DTOs, según corresponda, pero persistiendo aún en memoria)
+
