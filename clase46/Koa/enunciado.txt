@@ -1,0 +1,16 @@
+Crear una aplicación API Rest con Koa, para ingresar notas de alumnos junto a su nombre, apellido, DNI y materia cursada. 
+
+La aplicación debe ser capaz de responder:
+
+- El listado de todos los alumnos, con sus datos completos
+- Los datos de un alumno seleccionado por su DNI
+- El promedio que han alcanzado los alumnos de una determinada materia
+
+Además se podrá actualizar y borrar los datos de un alumno por su DNI
+
+Probar la funcionalidad con postman.
+
+Notas: 
+- Para seleccionar la materia de la cual se calculará el promedio alcanzado por sus alumnos utilizar query params en Koa. Si dicha materia no existe, retornar un mensaje de error.
+- En cada request de ingreso ó modificación, validar sencillamente los datos, y en caso de no ser consistentes, dar el mensaje de error correspondiente.
+
