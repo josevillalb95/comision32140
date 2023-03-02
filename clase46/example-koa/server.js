@@ -10,5 +10,6 @@ app.use( async ctx => {
     const res= ctx.response
     console.log({req})
     console.log({res})
+    
 })
 app.listen(8080)
